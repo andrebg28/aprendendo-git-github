@@ -1,0 +1,17 @@
+Configurações iniciais:
+    git config --global user.name "Andrebg28"
+    git config --global user.email "andrebg28@gmail.com"
+    git config --global core.editor code
+
+Consultar configurações:
+    git config user.name
+    git config user.email
+    git config core.editor
+    git config --list
+
+Inicializar o git em um projeto:
+    git init
+
+
+Adicionar arquivos para serem vercionados no git:
+    git add nome_do_arquivo
