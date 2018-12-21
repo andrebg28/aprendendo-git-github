@@ -13,5 +13,8 @@ Inicializar o git em um projeto:
     git init
 
 
-Adicionar arquivos para serem vercionados no git:
+Adicionar arquivos para serem comitados no git:
     git add nome_do_arquivo
+
+Comitar arquivos adicionados:
+    git commit -m "mensagem que diz o que foi feito neste commit"
