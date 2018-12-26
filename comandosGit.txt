@@ -57,6 +57,9 @@ Desfazer Commit:
     git reset --mixed "hash"
     git reset --hard "hash"
 
+Reverter Commit sem apaga-lo do historico:
+    git revert "hash_do_comite_problematico" # git revert 27bb09559994840e2963d05720e1534d059a5f02
+
 Criando branch:
     git checkout -b "nome_da_branch" # git checkout -b teste-branch (branch: ramo, ramificação)
 
@@ -74,7 +77,7 @@ Unindo branchs:
     git rebase "nome_da_branch" # git rebase teste
 
 
-Quarda as modificações feitas mas tira o status "modified" dos arquivo modificados:
+Guarda as modificações feitas mas tira o status "modified" dos arquivo modificados:
     git stash #Salva e remove o status "modified" dos arquivos
     git stash list #Lista todos os stash
     git stash clear #Limpa todos os stash
@@ -88,6 +91,9 @@ Listar tags:
 Visualisar informações de determinada tag:
     git tag --show "versão_da_tag"
 
+Apagar tag:
+    git tag -d "versão_da_tag"
+
 github{
     Link para pagina de ajuda para trabalhar com SSH:
         https://help.github.com/articles/connecting-to-github-with-ssh/
@@ -99,6 +105,12 @@ github{
         git push origin "branch" # git push origin master
         git push -u origin "branch" # caso use "-u" os pushs seguintes poderam ser executados apenas assim: cdgui push
 
+    'Empurra(push)' tags:
+         git push origin "branch" --tags # git push origin master --tags
+
+
+    Apagar tag remota(no github):
+        git push origin :"versão_da_tag" # git push origin :1.0.1
     Clonando projeto apartir do github:
         git clone git@github.com:"repositorio" "nome da pasta" # git clone git@github.com:andrebg28/aprendendo-git-github.git clone-teste
 }
