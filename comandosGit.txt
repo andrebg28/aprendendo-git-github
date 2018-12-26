@@ -79,6 +79,14 @@ Quarda as modificações feitas mas tira o status "modified" dos arquivo modific
     git stash list #Lista todos os stash
     git stash clear #Limpa todos os stash
 
+Criar tag:
+    git tag -a "versão_da_tag" -m "mensagem descrevendo a versão" # git tag -a v1.0.0 -m "minha primeira tag"
+
+Listar tags:
+    git tag
+
+Visualisar informações de determinada tag:
+    git tag --show "versão_da_tag"
 
 github{
     Link para pagina de ajuda para trabalhar com SSH:
