@@ -41,3 +41,8 @@ Informa o que modificado em um determinado commit:
 Listar as diferença entre o arquivo do ultimo commit e as novas modificações:
     git diff
     git diff --name-only
+
+
+
+Desfazer mudanças em arquivos em estado "modified":
+    git checkout nome_do_arquivo
