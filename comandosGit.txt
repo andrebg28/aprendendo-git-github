@@ -9,6 +9,9 @@ Consultar configurações:
     git config core.editor
     git config --list
 
+Configuração de alias(pseudônimo, apelido):
+    git config --global alias."apelido_para_o_comando" "comando" #git config --global alias.s status (agora "git s" == "git status")
+
 Inicializar o git em um projeto:
     git init
 
@@ -50,6 +53,44 @@ Desfazer mudanças em arquivos em estado "modified":
 
 Desfazer Commit: 
 #Aula 12
-    git reset --soft "hash"
+    git reset --soft "hash" # git reset --soft
     git reset --mixed "hash"
     git reset --hard "hash"
+
+Criando branch:
+    git checkout -b "nome_da_branch" # git checkout -b teste-branch (branch: ramo, ramificação)
+
+Listando branch:
+    git branch
+
+Navegar entre branch:
+    git checkout "nome_da_branch" # git checkout master
+
+Apagar branch:
+    git branch -D "nome da branch" # git branch -D teste-branch  # antes de apagar devemos mudar para outra branch existente.
+
+Unindo branchs:
+    git merge "nome_da_branch" # git merge teste
+    git rebase "nome_da_branch" # git rebase teste
+
+
+Quarda as modificações feitas mas tira o status "modified" dos arquivo modificados:
+    git stash #Salva e remove o status "modified" dos arquivos
+    git stash list #Lista todos os stash
+    git stash clear #Limpa todos os stash
+
+
+github{
+    Link para pagina de ajuda para trabalhar com SSH:
+        https://help.github.com/articles/connecting-to-github-with-ssh/
+
+    Link para configurar chaves SSH no github:
+        https://github.com/settings/keys
+
+    'Empurra(push)' os commits para o github:
+        git push origin "branch" # git push origin master
+        git push -u origin "branch" # caso use "-u" os pushs seguintes poderam ser executados apenas assim: cdgui push
+
+    Clonando projeto apartir do github:
+        git clone git@github.com:"repositorio" "nome da pasta" # git clone git@github.com:andrebg28/aprendendo-git-github.git clone-teste
+}
