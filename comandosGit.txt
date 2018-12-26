@@ -44,5 +44,12 @@ Listar as diferença entre o arquivo do ultimo commit e as novas modificações:
 
 
 
-Desfazer mudanças em arquivos em estado "modified":
+Desfazer mudanças em arquivos em estado "modified": 
+#Aula 12
     git checkout nome_do_arquivo
+
+Desfazer Commit: 
+#Aula 12
+    git reset --soft "hash"
+    git reset --mixed "hash"
+    git reset --hard "hash"
